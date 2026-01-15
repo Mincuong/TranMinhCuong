@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Bai4random {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rd = new Random();
+
+        double soNgauNhien = 1.0 + 99.0 * rd.nextDouble();
+
+        System.out.print("Nhap so thuc (1-100): ");
+        double soNguoiDung = sc.nextDouble();
+
+        System.out.println("So ngau nhien: " + soNgauNhien);
+
+        if (soNguoiDung > soNgauNhien) {
+            System.out.println("Lon hon");
+        } else if (soNguoiDung < soNgauNhien) {
+            System.out.println("Nho hon");
+        } else {
+            System.out.println("Bang nhau");
+        }
+    }
+}
